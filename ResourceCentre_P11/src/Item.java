@@ -13,7 +13,7 @@ public class Item {
 	}
 	public String toString() {
 		
-		// Write your codes here
+		// Write your codes here  // JUN KAI
 		return String.format("%-10s %-30s %-10s %-10s", getAssetTag(),
 				getDescription(), showAvailability(getIsAvailable()), getDueDate());
 	}

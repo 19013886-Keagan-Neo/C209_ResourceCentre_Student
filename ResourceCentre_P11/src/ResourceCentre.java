@@ -131,9 +131,8 @@ public class ResourceCentre {
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
-		for (int i = 0; i < camcorderList.size(); i++) {
+		for (int i = 0; i < camcorderList.size(); i++) {  // JUN KAI
 
-			Camcorder camcorder = camcorderList.get(i);
 			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", camcorderList.get(i).toString());
 		}
 		return output;
@@ -148,14 +147,11 @@ public class ResourceCentre {
 
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
-		// write your code here
+		// write your code here  // KEAGAN
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			Chromebook chromebook = chromebookList.get(i);
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebook.getAssetTag(),
-					chromebook.getDescription(), 
-					ResourceCentre.showAvailability(chromebook.getIsAvailable()),
-					chromebook.getDueDate(),chromebook.getOs());
+			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).toString());
+					
 		}
 		return output;
 	}
@@ -206,7 +202,7 @@ public class ResourceCentre {
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 			
-			String assetTag = camcorderList.get(i).getAssetTag();
+			String assetTag = camcorderList.get(i).getAssetTag(); // LAWRENCE
 			boolean isAvailableTag = camcorderList.get(i).getIsAvailable();
 			
 			if (tag.equalsIgnoreCase(assetTag)				
@@ -240,7 +236,7 @@ public class ResourceCentre {
 		boolean isLoaned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
-			String assetTag = chromebookList.get(i).getAssetTag();
+			String assetTag = chromebookList.get(i).getAssetTag();  // LAWRENCE
 			boolean isAvailableTag2 = chromebookList.get(i).getIsAvailable();
 			
 			if (tag.equalsIgnoreCase(assetTag)
@@ -274,7 +270,7 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < camcorderList.size(); i++) {
-			String assetTag = camcorderList.get(i).getAssetTag();
+			String assetTag = camcorderList.get(i).getAssetTag();  // LAWRENCE
 			boolean isAvailable = camcorderList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag)
 					&& isAvailable == false) {
@@ -304,7 +300,7 @@ public class ResourceCentre {
 		boolean isReturned = false;
 
 		for (int i = 0; i < chromebookList.size(); i++) {
-			String assetTag = chromebookList.get(i).getAssetTag();
+			String assetTag = chromebookList.get(i).getAssetTag();  // LAWRENCE
 			boolean isAvailable = chromebookList.get(i).getIsAvailable();
 			
 			if (tag.equalsIgnoreCase(assetTag)

@@ -13,7 +13,7 @@ public class Camcorder extends Item{
 	
 	public String toString(){
 		String info = super.toString();
-		// Write your codes here
+		// Write your codes here  // JUN KAI
 		return String.format("%-63s %-20d", info, getOpticalZoom());
 	}
 }
