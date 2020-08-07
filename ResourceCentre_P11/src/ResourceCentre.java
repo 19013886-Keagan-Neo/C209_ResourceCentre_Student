@@ -101,13 +101,17 @@ public class ResourceCentre {
 
 	public static void menu() {
 		ResourceCentre.setHeader("RESOURCE CENTRE APP");
+		itemMenu(); // KEAGAN
+		Helper.line(80, "-");
+
+	}
+
+	private static void itemMenu() {  // KEAGAN
 		System.out.println("1. Display Inventory");
 		System.out.println("2. Add item");
 		System.out.println("3. Loan item");
 		System.out.println("4. Return item");
 		System.out.println("5. Quit");
-		Helper.line(80, "-");
-
 	}
 	
 	public static void setHeader(String header) {
